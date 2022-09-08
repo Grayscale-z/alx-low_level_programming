@@ -1,2 +1,1 @@
-# alx-low_level_programming
-My first experience wit C programming language
+“My first commit in C”
