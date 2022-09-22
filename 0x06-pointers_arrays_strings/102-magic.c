@@ -1,34 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- *_strncpy - copy src into dest.
- *@dest: first string.
- *@src: second string.
- *@n: the number of bytes to use from src.
- *Return: string.
- */
+int main(void)
+{
+int n;
+int a[5];
+int *p;
 
-char *_strncpy(char *dest, char *src, int n)
-{
-int i = 0, k = 0;
+a[2] = 1024;
+p = &n;
+/*
+* write your line of code here...
+* Remember:
+* - you are not allowed to use a
+* - you are not allowed to modify p
+* - only one statement
+* - you are not allowed to code anything else than this line of code
+*/
 
-while (n > k)
-{
-if (src[k] == '\0')
-{
-for (; k < n; k++)
-{
-dest[i] = '\0';
-i++;
-}
-}
-else
-{
-dest[i] = src[k];
-k++;
-i++;
-}
-}
-
-return (dest);
+*(p + 5) = 98;
+/* ...so that this prints 98\n */
+printf("a[2] = %d\n", a[2]);
+return (0);
 }
