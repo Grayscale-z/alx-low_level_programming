@@ -1,23 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
-int main(void)
+/**
+ * _memset - fills memory with a constant byte
+ *
+ * @s: pointer to string
+ * @b: constant byte
+ * @n: first bytes to change
+ * Return: pointer to modified string
+ */
+
+char *_memset(char *s, char b, unsigned int n)
 {
-int n;
-int a[5];
-int *p;
+unsigned int i;
 
-a[2] = 1024;
-p = &n;
-/*
-* write your line of code here...
-* Remember:
-* - you are not allowed to use a
-* - you are not allowed to modify p
-* - only one statement
-* - you are not allowed to code anything else than this line of code
-*/
-*(p + 5) = 98;
-/* ...so that this prints 98\n */
-printf("a[2] = %d\n", a[2]);
-return (0);
+for (i = 0; i < n; i++)
+s[i] = b;
+return (s);
 }
