@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-void first(void) __attribute__ ((constructor));
-
+/* Using constructors in C */
+void main_constructor(void) __attribute__((constructor));
 /**
- * first - prints something before main
- *
- * Return: void
+ * main_constructor - A constructor function that prints a message
+ * before main runs
+ * Return: Nothing
  */
-void first(void)
+void main_constructor(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
+}
